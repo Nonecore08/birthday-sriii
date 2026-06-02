@@ -153,10 +153,14 @@ transition:.5s;
 opacity:1;
 transform:scale(1);
 }
-
-.tap{
-margin-top:20px;
+  .tap{
+margin-top:25px;
+padding:12px 22px;
+background:rgba(255,255,255,.25);
+backdrop-filter:blur(10px);
+border-radius:30px;
 color:white;
+font-weight:600;
 animation:blink 1.5s infinite;
 }
 
@@ -303,27 +307,6 @@ laughter, happiness and lots of cake 🎂
 </div>
 
 <script>
-
-/* Floating Hearts */
-
-function createHeart(){
-
-const heart=document.createElement("div");
-
-heart.className="heart";
-heart.innerHTML="💖";
-
-heart.style.left=Math.random()*100+"vw";
-heart.style.fontSize=(15+Math.random()*20)+"px";
-
-document.body.appendChild(heart);
-
-setTimeout(()=>{
-heart.remove();
-},8000);
-}
-
-setInterval(createHeart,400);
 
 /* Gift Message */
 
